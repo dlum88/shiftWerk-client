@@ -102,7 +102,7 @@ constructor(
       email: this.email,
       url_photo: this.url_photo,
       bio: this.bio,
-      phoneNumber: this.phoneNumber,
+      phone: this.phoneNumber,
       availability: this.availability,
       certifications: this.certifications,
       positions: this.positions,
