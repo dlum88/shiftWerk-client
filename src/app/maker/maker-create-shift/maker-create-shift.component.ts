@@ -71,12 +71,13 @@ export class MakerCreateShiftComponent implements OnInit {
   }
 
 
-  submit = () => {
+  submit = (answer) => {
     console.log('submitting');
     console.log(this.sForm.value);
     this.shiftService.submitShift(this.sForm.value, this.maker.id).subscribe(response => {
       console.log(response);
       });
+      this.update(answer);
     // create shift - on submit click =>
     // redirect to home-unfilled-shifts (to invite)
     // this.view = 'home';
